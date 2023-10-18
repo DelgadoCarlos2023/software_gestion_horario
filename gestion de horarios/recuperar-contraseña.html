@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+</head>
+<body>
+    <header>
+        <img src="images/uleam-logo.webp" alt="Imagen Izquierda" id="imagenIzquierda">
+        <h1>Recuperar Contraseña</h1>
+        <img src="images/logo-personal.PNG" alt="Imagen Derecha" id="imagenDerecha">
+    </header>
+    <div class="container">
+        <form action="inicio.html" id="registrationForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="email">Ingrese su correo:</label>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="nueva-password">Nueva contraseña:</label>
+                <input type="password" id="nueva-password" name="nueva-password" placeholder="Nueva contraseña" required>
+            </div>
+            <div class="form-group">
+                <div id="error-message" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <button class="btn" type="submit">Recuperar</button>
+            </div>
+        </form>
+    </div>
+    <script src="recuperar-contrasena.js"></script>
+</body>
+</html>

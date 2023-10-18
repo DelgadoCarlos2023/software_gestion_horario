@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi Perfil de Usuario</title>
+    <link rel="stylesheet" type="text/css" href="perfil.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>Mi Perfil</h1>
+        </div>
+        <div class="profile-content">
+            <img src="images/logo-personal.PNG" alt="Mi Avatar">
+            <h2>Actualizacion de datos</h2>
+
+            <div class="input-container">
+                <label for="email">Correo Electronico:</label>
+                <input type="text" id="email" placeholder="Correo Electrónico">
+            </div>
+
+            <div class="input-container">
+                <label for="location">Ubicacion:</label>
+                <input type="text" id="location" placeholder="Ciudad, País">
+            </div>
+
+            <div class="input-container">
+                <label for="birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthdate" readonly>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <button type="button" id="editProfile">Editar Perfil</button>
+            <button type="button" id="saveProfile" style="display: none;">Guardar</button>
+            <a href="horario.html">
+                <button type="button">Volver al Horario</button>
+            </a>
+        </div>
+    </div>
+    <script src="perfil.js"></script>
+</body>
+
+</html>

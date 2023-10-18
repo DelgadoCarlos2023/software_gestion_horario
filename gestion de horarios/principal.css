@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #ef0d0d;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo__img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo__text {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilos para el menú horizontal */
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    color: #efebeb;
+}
+
+.menu-list__item {
+    margin: 0 10px;
+}
+
+.menu-button-container {
+    display: inline-block;
+    border: 2px solid #f2ebeb;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 1, 1, 0.999);
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgb(226, 220, 220);
+}
+
+.menu-button {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 3px;
+}
+
+.menu-button:hover {
+    background-color: #CC0000;
+}
+
+/* Estilos para el contenido principal */
+.container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.content__claim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #ede9e9;
+    text-shadow: 2px 2px 4px rgba(236, 10, 10, 0.999);
+    z-index: 1;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typeText 6s steps(40, end) infinite;
+}
+
+@keyframes typeText {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #f60606;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__widget__title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer__widget__text {
+    margin: 0;
+}

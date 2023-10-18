@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Horario para la Uleam</title>
+    <link rel="stylesheet" type="text/css" href="horario.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/uleam-logo.webp" alt="Tu Imagen">
+        </div>
+        <h1>Horario para la Uleam</h1>
+        <div class="header-right">
+            <a href="perfil.html">
+                <button type="button">Perfil</button>
+            </a>
+            <a href="inicio.html">
+                <button type="button">Cerrar Sesión</button>
+            </a>
+        </div>
+    </header>
+
+    <label for="rol">Selecciona tu rol:</label>
+    <select id="rol">
+        <option value="select">seleccionar</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="docente">Docente</option>
+    </select>
+
+    <table class="horario">
+        <thead>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Contenido de la tabla del horario aquí -->
+            <tr>
+                <th>7:00 - 8:00</th>
+                <td><input type="text" id="lunes_7_8"></td>
+                <td><input type="text" id="martes_7_8"></td>
+                <td><input type="text" id="miercoles_7_8"></td>
+                <td><input type="text" id="jueves_7_8"></td>
+                <td><input type="text" id="viernes_7_8"></td>
+            </tr>
+            <tr>
+                <th>8:00 - 9:00</th>
+                <td><input type="text" id="lunes_8_9"></td>
+                <td><input type="text" id="martes_8_9"></td>
+                <td><input type="text" id="miercoles_8_9"></td>
+                <td><input type="text" id="jueves_8_9"></td>
+                <td><input type="text" id="viernes_8_9"></td>
+            </tr>
+            <tr>
+                <th>9:00 - 10:00</th>
+                <td><input type="text" id="lunes_9_10"></td>
+                <td><input type="text" id="martes_9_10"></td>
+                <td><input type="text" id="miercoles_9_10"></td>
+                <td><input type="text" id="jueves_9_10"></td>
+                <td><input type="text" id="viernes_9_10"></td>
+            </tr>
+            <tr>
+                <th>10:00 - 11:00</th>
+                <td><input type="text" id="lunes_10_11"></td>
+                <td><input type="text" id="martes_10_11"></td>
+                <td><input type="text" id="miercoles_10_11"></td>
+                <td><input type="text" id="jueves_10_11"></td>
+                <td><input type="text" id="viernes_10_11"></td>
+            </tr>
+            <tr>
+                <th>11:00 - 12:00</th>
+                <td><input type="text" id="lunes_11_12"></td>
+                <td><input type="text" id="martes_11_12"></td>
+                <td><input type="text" id="miercoles_11_12"></td>
+                <td><input type="text" id="jueves_11_12"></td>
+                <td><input type="text" id="viernes_11_12"></td>
+            </tr>
+            <tr>
+                <th>12:00 - 13:00</th>
+                <td><input type="text" id="lunes_12_13"></td>
+                <td><input type="text" id="martes_12_13"></td>
+                <td><input type="text" id="miercoles_12_13"></td>
+                <td><input type="text" id="jueves_12_13"></td>
+                <td><input type="text" id="viernes_12_13"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <button id="ingresar-horario-btn">Ingresar horario por consola</button>
+        <button id="guardar-horario-btn">Guardar Horario</button>
+    </div>
+
+    <script src="horario.js"></script>
+</body>
+
+</html>
